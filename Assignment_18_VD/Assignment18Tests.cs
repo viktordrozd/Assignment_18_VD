@@ -4,8 +4,6 @@ using OpenQA.Selenium.Chrome;
 using System;
 using ApplicationPages.GlobalSQA;
 
-using System.Threading;
-
 namespace Assignment_16_VD
 {
     public class Assignment18Tests
