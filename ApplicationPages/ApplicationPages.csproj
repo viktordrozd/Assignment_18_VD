@@ -61,6 +61,7 @@
     <Compile Include="GlobalSQA\DemoTestingSitePage.cs" />
     <Compile Include="GlobalSQA\HomePage.cs" />
     <Compile Include="GlobalSQA\ProgressBarPage.cs" />
+    <Compile Include="GlobalSQA\SamplePageTestPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
