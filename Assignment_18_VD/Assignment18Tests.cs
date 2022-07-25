@@ -38,11 +38,11 @@ namespace Assignment_16_VD
             samplePageTestPage.UploadProfilePic(picName);
             samplePageTestPage.SetName(name);
             samplePageTestPage.SetEmail(email);
+            samplePageTestPage.SetWebsite(website);
             samplePageTestPage.SelectExperience(experienceValue);
             samplePageTestPage.SetExperise(expertise);
             samplePageTestPage.SetEducation(education);
             samplePageTestPage.SetComment(comment);
-            samplePageTestPage.SetWebsite(website);
             samplePageTestPage.SubmitForm();
 
             SamplePageTestResultPage samplePageTestResultPage = new SamplePageTestResultPage(driver);

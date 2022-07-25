@@ -46,29 +46,18 @@ namespace ApplicationPages.GlobalSQA
 
         public void SetWebsite(string website)
         {
-            //_websiteInput.Clear();
-            //_websiteInput.Click();
-            //_websiteInput.SendKeys(website);
-            //_websiteInput.SendKeys(Keys.Tab);
-            //_websiteInput.SendKeys(Keys.Tab);
-            //_websiteInput.Submit();
-
-            //IJavaScriptExecutor jse = (IJavaScriptExecutor)_driver;
-            //jse.ExecuteScript($"document.getElementById('g2599-website').value = '{website}'");
-
-            Actions actions = new Actions(_driver);
-            actions.MoveToElement(_websiteInput).Click().SendKeys(website).Perform();
-
-            //Thread.Sleep(1000);
+            _websiteInput.Clear();
+            _websiteInput.SendKeys(website);
         }
 
         public void SelectExperience(string option)
         {
             _experienceDropdown.SelectByText(option);
         }
+
         public void SetComment(string comment)
         {
-            _websiteInput.Clear();
+            _commentTextArea.Clear();
             _commentTextArea.SendKeys(comment);
         }
 
