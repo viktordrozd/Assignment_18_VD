@@ -14,16 +14,19 @@ namespace Assignment_16_VD
             string globalSqaUrl = "https://www.globalsqa.com/";
             string menuFirstLevel = "Tester’s Hub";
             string menuSecondLevel = "Sample Page Test";
+
             string picName = "cartoon_blackbird.gif";
             string name = "FirstName LastName";
             string email = "firstnamelastname@mail.com";
             string website = "https://www.google.com";
             string experienceValue = "10+";
+
             Dictionary<string, bool> expertise = new Dictionary<string, bool> {
                 { "Functional Testing", true},
                 { "Automation Testing", false },
                 { "Manual Testing", true }
             };
+
             string education = "Other";
             string comment = Faker.Lorem.Sentence();
 
@@ -40,6 +43,7 @@ namespace Assignment_16_VD
             samplePageTestPage.SetEmail(email);
             samplePageTestPage.SetWebsite(website);
             samplePageTestPage.SelectExperience(experienceValue);
+
             samplePageTestPage.SetExperise(expertise);
             samplePageTestPage.SetEducation(education);
             samplePageTestPage.SetComment(comment);
@@ -56,6 +60,7 @@ namespace Assignment_16_VD
                 Assert.True(name == resultData["Name"], $"Expected: {name}, but got: {resultData["Name"]}");
                 Assert.True(email == resultData["Email"], $"Expected: {email}, but got: {resultData["Email"]}");
                 Assert.True(website == resultData["Website"], $"Expected: {website}, but got: {resultData["Website"]}");
+
                 Assert.True(experienceValue == resultData["Experience (In Years)"], $"Expected: {experienceValue}, but got: {resultData["Experience (In Years)"]}");
                 Assert.True(education == resultData["Education"], $"Expected: {education}, but got: {resultData["Education"]}");
                 Assert.True(comment == resultData["Comment"], $"Expected: {comment}, but got: {resultData["Comment"]}");
