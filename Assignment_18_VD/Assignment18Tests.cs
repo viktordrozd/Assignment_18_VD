@@ -12,8 +12,8 @@ namespace Assignment_16_VD
         public void Assignment18_1Test()
         {
             string globalSqaUrl = "https://www.globalsqa.com/";
-            string menuFirstLevel = "Tester’s Hub";
-            string menuSecondLevel = "Sample Page Test";
+            string menuTestersHub = "Tester’s Hub";
+            string menuSamplePageTest = "Sample Page Test";
 
             string picName = "cartoon_blackbird.gif";
             string name = "FirstName LastName";
@@ -34,7 +34,7 @@ namespace Assignment_16_VD
             driver.Url = globalSqaUrl;
 
             HomePage homePage = new HomePage(driver);
-            homePage.menu.navigateTo(menuFirstLevel, menuSecondLevel);
+            homePage.menu.navigateTo(menuTestersHub, menuSamplePageTest);
 
             SamplePageTestPage samplePageTestPage = new SamplePageTestPage(driver);
 
